@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+	</script>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
+	</script>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+	<link rel="stylesheet" href="government.css">
+
+</head>
+
+
+<body data-page2="dis-loyal">
+
+	<div class="container">
+		<a href="#"><img class="mainimage"  src="tgif.png"  alt="site logo"/></a>
+		<img class="capitol" src="capitol.png" alt="capitol" align="right" />
+
+
+		<div>
+
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+
+					<ul class="nav navbar-nav">
+
+						<li><a href="Home.html">Home</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="house-data.html">House</a></li>
+								<li><a href="senate-data.html">Senate</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="Attendance-House.html">House</a></li>
+								<li><a href="Attendance-Senate.html">Senate</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="PartyLoyalty-House.html">House</a></li>
+								<li><a href="PartyLoyalty-senate.html">Senate</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="email">
+						<a href="mailto:nysl@chisoccer.org"?subject=We%20will%20reply%20&body=to%20your%20email%20soon:>government@tgif.org</a>
+						</div>
+				</div>
+			</nav>
+		</div>
+
+
+
+		<header>
+			<div>
+			</div>
+		</header>
+		<!--Table container-->
+		<div>
+			<div class="flex1">
+				<div class="loyalty-text">
+					<h2>Party Loyalty</h2>
+					<p>Those who consider themselves to be strong partisans, strong Democrats and strong Republicans respectively, tend to be the most faithful in voting for their party's nominee for office and legislation that backs their party's agenda. </p>
+				</div>
+
+
+				<div class="col-12 col-sm-12 col-lg-12">
+					<table class="table table-bordered">
+						<h2>House at a glance</h2>
+						<thead>
+							<tr>
+								<th>Party</th>
+								<th>Number of Reps</th>
+								<th>% Voted with Prty</th>
+							</tr>
+						</thead>
+						<tbody id="info">
+
+						</tbody>
+					</table>
+				</div>
+			</div>
+
+			<div class="flex2">
+
+				<div class="column">
+					<h2>Least Loyal (Bottom 10% of Party)</h2>
+					<div class="col-12 col-sm-12 col-lg-12">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Number Party Votes</th>
+									<th>% Party Votes</th>
+								</tr>
+							</thead>
+							<tbody id="info5">
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+
+				<div class="column">
+					<h2>Most Loyal (Top 10% of Party)</h2>
+					<div class="col-12 col-sm-12 col-lg-12">
+						<table class="table table-bordered">
+							<thead>
+								<tr>
+									<th>Name</th>
+									<th>Number Party Votes</th>
+									<th>% Party Votes</th>
+								</tr>
+							</thead>
+							<tbody id="info4">
+
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container">
+		<div class="jumbo">
+			<div class="jumbotron">
+				<h4>Ⓒ2016 TGIF | ALL RIGHTS RESERVED </h4>
+			</div>
+		</div>
+	</div>
+
+	<!--	<script src="pro-congress-113-house.js"></script>-->
+	<script src="statistics.js"></script>
+
+</body>
+
+</html>

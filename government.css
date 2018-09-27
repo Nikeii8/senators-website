@@ -1,0 +1,161 @@
+/*
+HOME SECTION
+*/
+
+.home-text {
+	width:60%;
+	margin-left: 15px;
+	
+}
+
+
+.capitol {
+	
+	width: 500px;
+	height: 300px;
+	margin-left: 50px;
+}
+
+.email {
+  margin-left: 950px;
+	
+font-size: 17px;
+  
+}
+
+.container-fluid {
+	font-size: 18px;
+}
+ 
+/* 
+SENATE SECTION 
+*/
+
+.senate-text {
+	width:60%;
+	margin-left: 15px;
+	
+}
+
+.links1 {
+	display: block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+}
+
+.box-filters {
+	margin-left: 15px;
+	
+}
+
+#stateBox {
+	margin-right: 15px;
+	
+}
+
+.btn-group ul {
+	max-height: 200px;
+	overflow: auto;
+   
+}
+
+.box-filters {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+/*
+GLOBAL SECTION
+*/
+
+.container-fluid {
+	background-color: 
+}
+
+.jumbo {
+	text-align: center;
+	
+}
+.container {
+	
+	background-color: white;
+	
+	
+}
+
+
+
+/*
+HOUSE SECTION
+*/
+
+
+
+.house-text {
+	width:60%;
+	margin-left: 15px;
+	
+	
+	
+}
+.links2 {
+	display:block;
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+	
+	
+}
+
+/*
+ATTENDANCE SECTION
+*/
+
+.attendance-text {
+	width:60%;
+	margin-left: 15px;
+}
+	
+	
+}
+
+
+/*
+LOYALY SECTION
+*/
+
+.loyalty-text {
+	width:60%;
+	margin-left: 15px;
+	margin-right: 15;
+	
+}
+
+.flex1 {
+	display: flex;
+	justify-content: space-between;
+	margin-left: 15px;
+	margin-right: 15px;
+	
+}
+
+.flex2 {
+	display: flex;
+	justify-content:space-between;
+	margin-left: 15px;
+	margin-right: 15px;
+}
+
+
+.column {
+	display: flex;
+	flex-direction: column;
+	
+	
+}
+
+.loyal-mod {
+	
+}

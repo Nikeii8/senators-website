@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.js"></script>	
+	
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<link rel="stylesheet" href="government.css">
+
+
+</head>
+
+<body>
+	<div class="container">
+		<a href="#"><img class="mainimage"  src="tgif.png"  alt="site logo"/></a>
+		<img class="capitol" src="capitol.png" alt="capitol" align="right"/>
+
+		<div>
+
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+
+					<ul class="nav navbar-nav">
+
+						<li><a href="Home.html">Home</a></li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Congress<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="house-data.html">House</a></li>
+								<li><a href="senate-data.html">Senate</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Attendance<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="Attendance-House.html">House</a></li>
+								<li><a href="Attendance-Senate.html">Senate</a></li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a class="dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="PartyLoyalty-House.html">House</a></li>
+								<li><a href="PartyLoyalty-senate.html">Senate</a></li>
+							</ul>
+						</li>
+					</ul>
+					<div class="email">
+						<a href="mailto:nysl@chisoccer.org"?subject=We%20will%20reply%20&body=to%20your%20email%20soon:>government@tgif.org</a>
+						</div>
+				</div>
+			</nav>
+		</div>
+		<!--Table container-->
+
+		<div class="house-text">
+			<h2>Congressmen</h2>
+			<p>The major power of the House is to pass federal legislation that affects the entire country, although its bills must also be passed by the Senate and further agreed to by the U.S. President before becoming law (unless both the House and Senate re-pass the legislation with a two-thirds majority in each chamber). The House has some exclusive powers: the power to initiate revenue bills, to impeach officials (impeached officials are subsequently tried in the Senate), and to elect the U.S. President in case there is no majority in the Electoral College.</p>
+			<p>Each U.S. state is represented in the House in proportion to its population as measured in the census, but every state is entitled to at least one representative. </p>
+		</div>
+
+		<div class="box-filters">
+
+			<div id="checkboxes">
+				Filter by Party:
+				<input id="boxR" type="checkbox" value="R" checked />Republicans
+				<input id="boxD" type="checkbox" value="D" checked />Democrats
+				<input id="boxI" type="checkbox" value="I" checked />Independent
+
+			</div>
+
+			<div>
+				Filter by State:
+				<select id="stateBox">
+					<option value="All">All</option>
+					<option value="AL">AL</option>
+					<option value="AK">AK</option>
+					<option value="AZ">AZ</option>
+					<option value="AR">AR</option>
+					<option value="CA">CA</option>
+					<option value="CO">CO</option>
+					<option value="CT">CT</option>
+					<option value="DE">DE</option>
+					<option value="FL">FL</option>
+					<option value="GA">GA</option>
+					<option value="HI">HI</option>
+					<option value="ID">ID</option>
+					<option value="IL">IL</option>
+					<option value="IN">IN</option>
+					<option value="IA">IA</option>
+					<option value="KS">KS</option>
+					<option value="KY">KY</option>
+					<option value="LA">LA</option>
+					<option value="ME">ME</option>
+					<option value="MD">MD</option>
+					<option value="MA">MA</option>
+					<option value="MI">MI</option>
+					<option value="MN">MN</option>
+					<option value="MS">MS</option>
+					<option value="MP">MP</option>
+					<option value="MO">MO</option>
+					<option value="MT">MT</option>
+					<option value="NE">NE</option>
+					<option value="NV">NV</option>
+					<option value="NH">NH</option>
+					<option value="NJ">NJ</option>
+					<option value="NM">NM</option>
+					<option value="NY">NY</option>
+					<option value="NC">NC</option>
+					<option value="ND">ND</option>
+					<option value="OH">OH</option>
+					<option value="OK">OK</option>
+					<option value="OR">OR</option>
+					<option value="PA">PA</option>
+					<option value="RI">RI</option>
+					<option value="SC">SC</option>
+					<option value="SD">SD</option>
+					<option value="TN">TN</option>
+					<option value="TX">TX</option>
+					<option value="UT">UT</option>
+					<option value="VT">VT</option>
+					<option value="VA">VA</option>
+					<option value="WA">WA</option>
+					<option value="WV">WV</option>
+					<option value="WI">WI</option>
+					<option value="WY">WY</option>
+					
+					
+							
+				</select>
+			</div>
+		</div>
+
+		<div class="col-12 col-sm-12 col-lg-12">
+
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>Name</th>
+						<th>Party</th>
+						<th>State</th>
+						<th>Years in Office</th>
+						<th>% Votes /w Party</th>
+					</tr>
+				</thead>
+				<tbody id="info">
+					
+				</tbody>
+				<script>
+					
+				</script>
+			</table>
+		</div>
+	</div>
+	<div class="container">
+		<div class="jumbo">
+			<div class="jumbotron">
+			<h4>Ⓒ 2016 TGIF | ALL RIGHTS RESERVED</h4>
+			</div>
+		</div>
+	</div>
+
+
+<!--	<script src="pro-congress-113-house.js"></script>-->
+	<script src="WorkFolder.js"></script>
+</body>
+
+</html>
